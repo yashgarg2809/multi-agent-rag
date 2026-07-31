@@ -1,0 +1,14 @@
+[
+  {"id": "eq1", "q": "Where did cricket originate?", "must_contain": ["england"], "should_answer": true},
+  {"id": "eq2", "q": "What are different kinds of cricket equipment?", "must_contain": ["bat", "ball"], "should_answer": true},
+  {"id": "eq3", "q": "What protective gear does a batsman wear?", "must_contain": ["helmet", "glove", "pads"], "should_answer": true, "min_hits": 2},
+  {"id": "eq4", "q": "What are stumps and bails?", "must_contain": ["stump", "bail"], "should_answer": true},
+  {"id": "eq5", "q": "Is cricket played outdoors or indoors?", "must_contain": ["outdoor"], "should_answer": true},
+  {"id": "eq6", "q": "What is the role of a wicket-keeper?", "must_contain": ["keeper", "glove"], "should_answer": true, "min_hits": 1},
+  {"id": "typo1", "q": "what are differnt kinds of  cricket equipemnts?", "must_contain": ["bat", "ball"], "should_answer": true},
+  {"id": "typo2", "q": "were did kriket originat?", "must_contain": ["england"], "should_answer": true},
+  {"id": "vague1", "q": "Tell me about the gear", "must_contain": ["bat", "ball", "glove", "helmet", "pads"], "should_answer": true, "min_hits": 2},
+  {"id": "ref1", "q": "What is the capital of France?", "must_contain": [], "should_answer": false},
+  {"id": "ref2", "q": "Explain quantum computing in detail", "must_contain": [], "should_answer": false},
+  {"id": "chat1", "q": "hi", "must_contain": [], "should_answer": false}
+]

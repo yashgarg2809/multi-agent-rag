@@ -1,0 +1,179 @@
+{
+  "summary": {
+    "tag": "baseline",
+    "pass_rate": "4/12",
+    "avg_ms": {
+      "router": 332.1,
+      "retriever": 10988.8,
+      "critic": 421.7,
+      "total": 50347.7
+    },
+    "wall_s": 506.9
+  },
+  "rows": [
+    {
+      "id": "eq1",
+      "q": "Where did cricket originate?",
+      "pass": true,
+      "detail": "keywords 1/1",
+      "route": "answer",
+      "score": 1.0,
+      "critic_model": "groq:openai/gpt-oss-120b",
+      "timings_ms": {
+        "router": 2142.4,
+        "retriever": 36931.7,
+        "critic": 1758.9,
+        "total": 101300.4
+      },
+      "error": "",
+      "answer_preview": "Based on the provided text, cricket originated in England, with evidence pointing to its beginnings in south-east England in the beginning of the 1900s [cricket_tutorial.pdf p.4, p.6, p.17]."
+    },
+    {
+      "id": "eq2",
+      "q": "What are different kinds of cricket equipment?",
+      "pass": true,
+      "detail": "keywords 2/2",
+      "route": "answer",
+      "score": 10.0,
+      "critic_model": "groq:openai/gpt-oss-120b",
+      "timings_ms": {
+        "router": 603.0,
+        "retriever": 54719.8,
+        "critic": 2008.0,
+        "total": 57334.3
+      },
+      "error": "",
+      "answer_preview": "Based on the provided context, the different kinds of cricket equipment are:\n\n* **Bat:** Carved equipment made of wood with a handle on top used to play and hit the ball [cricket_tutorial.pdf p.8].\n* "
+    },
+    {
+      "id": "eq3",
+      "q": "What protective gear does a batsman wear?",
+      "pass": true,
+      "detail": "keywords 3/3",
+      "route": "answer",
+      "score": 1.0,
+      "critic_model": "groq:openai/gpt-oss-120b",
+      "timings_ms": {
+        "router": 664.6,
+        "retriever": 40213.6,
+        "critic": 1293.5,
+        "total": 42177.0
+      },
+      "error": "",
+      "answer_preview": "Based on the provided context, the protective gear worn by a cricket batsman includes:\n\n* **Helmet:** A head gear made of metal and hard plastic with a metallic front grill, worn while batting to prot"
+    },
+    {
+      "id": "eq4",
+      "q": "What are stumps and bails?",
+      "pass": false,
+      "detail": "exception",
+      "route": "error",
+      "score": 0,
+      "critic_model": null,
+      "timings_ms": {},
+      "error": "GoogleRateLimitError: Error calling model 'gemini-3.6-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+      "answer_preview": ""
+    },
+    {
+      "id": "eq5",
+      "q": "Is cricket played outdoors or indoors?",
+      "pass": false,
+      "detail": "exception",
+      "route": "error",
+      "score": 0,
+      "critic_model": null,
+      "timings_ms": {},
+      "error": "GoogleRateLimitError: Error calling model 'gemini-3.6-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+      "answer_preview": ""
+    },
+    {
+      "id": "eq6",
+      "q": "What is the role of a wicket-keeper?",
+      "pass": false,
+      "detail": "exception",
+      "route": "error",
+      "score": 0,
+      "critic_model": null,
+      "timings_ms": {},
+      "error": "GoogleRateLimitError: Error calling model 'gemini-3.6-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+      "answer_preview": ""
+    },
+    {
+      "id": "typo1",
+      "q": "what are differnt kinds of  cricket equipemnts?",
+      "pass": false,
+      "detail": "exception",
+      "route": "error",
+      "score": 0,
+      "critic_model": null,
+      "timings_ms": {},
+      "error": "GoogleRateLimitError: Error calling model 'gemini-3.6-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+      "answer_preview": ""
+    },
+    {
+      "id": "typo2",
+      "q": "were did kriket originat?",
+      "pass": false,
+      "detail": "exception",
+      "route": "error",
+      "score": 0,
+      "critic_model": null,
+      "timings_ms": {},
+      "error": "GoogleRateLimitError: Error calling model 'gemini-3.6-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+      "answer_preview": ""
+    },
+    {
+      "id": "vague1",
+      "q": "Tell me about the gear",
+      "pass": false,
+      "detail": "exception",
+      "route": "error",
+      "score": 0,
+      "critic_model": null,
+      "timings_ms": {},
+      "error": "GoogleRateLimitError: Error calling model 'gemini-3.6-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+      "answer_preview": ""
+    },
+    {
+      "id": "ref1",
+      "q": "What is the capital of France?",
+      "pass": false,
+      "detail": "exception",
+      "route": "error",
+      "score": 0,
+      "critic_model": null,
+      "timings_ms": {},
+      "error": "GoogleRateLimitError: Error calling model 'gemini-3.6-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+      "answer_preview": ""
+    },
+    {
+      "id": "ref2",
+      "q": "Explain quantum computing in detail",
+      "pass": false,
+      "detail": "exception",
+      "route": "error",
+      "score": 0,
+      "critic_model": null,
+      "timings_ms": {},
+      "error": "GoogleRateLimitError: Error calling model 'gemini-3.6-flash' (RESOURCE_EXHAUSTED): 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. Fo",
+      "answer_preview": ""
+    },
+    {
+      "id": "chat1",
+      "q": "hi",
+      "pass": true,
+      "detail": "refused",
+      "route": "reject",
+      "score": 1.0,
+      "critic_model": "groq:openai/gpt-oss-120b",
+      "timings_ms": {
+        "router": 574.9,
+        "retriever": 0.0,
+        "critic": 0.0,
+        "total": 578.9
+      },
+      "error": "",
+      "answer_preview": "That doesn't look answerable from the uploaded PDF. Please ask about PDF content."
+    }
+  ]
+}
